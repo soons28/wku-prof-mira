@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>원광대학교 한중관계연구원 김미라 교수 - 공식 홈페이지</title>
+    <meta name="description" content="원광대학교 한중관계연구원 김미라 연구교수의 공식 홈페이지입니다. 중국고전산문, 문학비평 및 한중비교문학 연구 성과를 소개합니다.">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;700;900&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="main-header">
+        <div class="container">
+            <div class="logo-area">
+                <div class="wku-logo">
+                    <span class="wku-text-kr" data-i18n="wku_name">원광대학교</span>
+                    <span class="wku-text-en" data-i18n="wku_name_en">WONKWANG UNIVERSITY</span>
+                </div>
+                <div class="vertical-divider"></div>
+                <div class="prof-title" data-i18n="header_title">한중관계연구원 연구교수</div>
+            </div>
+            
+            <button class="mobile-nav-toggle" aria-label="Toggle Navigation" data-i18n-aria-label="nav_mobile_toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav id="nav-menu">
+                <ul id="main-nav">
+                    <li><a href="#about" data-i18n="nav_profile">프로필</a></li>
+                    <li><a href="#research" data-i18n="nav_research">연구분야</a></li>
+                    <li><a href="#publications" data-i18n="nav_publications">학술성과</a></li>
+                    <li><a href="#contact" data-i18n="nav_contact">연락처</a></li>
+                </ul>
+                
+                <div class="lang-selector">
+                    <button class="lang-btn">
+                        <span class="icon">🌐</span>
+                        <span class="current-lang">한국어</span>
+                    </button>
+                    <ul class="lang-dropdown">
+                        <li data-lang="ko">한국어</li>
+                        <li data-lang="en">English</li>
+                        <li data-lang="zh">中文</li>
+                        <li data-lang="ja">日本語</li>
+                        <li data-lang="de">Deutsch</li>
+                        <li data-lang="es">Español</li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="ink-overlay"></div>
+            
+            <!-- Cinematic Living Ink Effect -->
+            <div class="hero-video-mimic">
+                <div class="video-bg-layer" style="background-image: url('hero-bg-v2.png');"></div>
+                
+                <!-- Animated Ink Animals -->
+                <div class="ink-animal butterfly-1">
+                    <svg viewBox="0 0 100 100"><path d="M50 50 C20 20 20 80 50 50 C80 80 80 20 50 50" fill="currentColor"/></svg>
+                </div>
+                <div class="ink-animal butterfly-2">
+                    <svg viewBox="0 0 100 100"><path d="M50 50 C20 20 20 80 50 50 C80 80 80 20 50 50" fill="currentColor"/></svg>
+                </div>
+                <div class="ink-animal duck-1">
+                    <svg viewBox="0 0 100 100"><path d="M20 60 Q40 40 60 60 L80 60 Q70 80 40 80 Z" fill="currentColor"/></svg>
+                </div>
+
+                <div class="mist-layer mist-1"></div>
+                <div class="mist-layer mist-2"></div>
+                <div class="particles-layer"></div>
+                <div class="ink-grain"></div>
+                <div class="vignette-overlay"></div>
+            </div>
+
+            <!-- SVG Filters for Living Painting Effect -->
+            <svg style="position: fixed; width: 0; height: 0;">
+                <filter id="living-ink">
+                    <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="3" seed="1">
+                        <animate attributeName="baseFrequency" dur="30s" values="0.01 0.01; 0.015 0.015; 0.01 0.01" repeatCount="indefinite" />
+                    </feTurbulence>
+                    <feDisplacementMap in="SourceGraphic" scale="15" />
+                </filter>
+            </svg>
+
+            <div class="container hero-content">
+                <div class="hero-text-box">
+                    <div class="hero-text">
+                        <h2 class="sub-title" data-i18n="hero_sub_title">학문과 지혜의 조화</h2>
+                        <h1 class="main-name"><span data-i18n="prof_name">김미라</span> <span class="title-suffix" data-i18n="prof_title_suffix">교수</span></h1>
+                        <p class="hero-desc" data-i18n="hero_desc">원광대학교 한중관계연구원에서 중국 고전문학을 연구하며, 전통의 깊이와 현대의 시각을 잇는 학문적 가교 역할을 하고 있습니다.</p>
+                        <div class="hero-actions">
+                            <a href="#research" class="btn btn-primary" data-i18n="hero_btn_research">연구 둘러보기</a>
+                            <a href="#contact" class="btn btn-outline" data-i18n="hero_btn_contact">문의하기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-frame">
+                        <img src="profile.jpg" alt="Professor Mira Kim" data-i18n-alt="prof_img_alt">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="section_about_badge">ABOUT</span>
+                    <h2 class="section-title" data-i18n="section_about_title">학문적 여정</h2>
+                </div>
+                <div class="about-grid">
+                    <div class="about-card">
+                        <h3 data-i18n="about_history_title">학력 및 경력</h3>
+                        <ul class="history-list">
+                            <li><span data-i18n="about_history_1_date">현재</span> <span data-i18n="about_history_1_desc">원광대학교 한중관계연구원 연구교수</span></li>
+                            <li><span data-i18n="about_history_2_date">최종학위</span> <span data-i18n="about_history_2_desc">중국 복단대학(复旦大学) 문학 박사 (중국고대문학)</span></li>
+                        </ul>
+                    </div>
+                    <div class="about-content">
+                        <p data-i18n="about_content_p1">중국 복단대학에서 중국고대문학 박사 학위를 취득한 후, 중국 고전 산문과 문학 비평, 그리고 한중 비교 문학 분야에서 깊이 있는 연구를 수행하고 있습니다. 특히 고전 텍스트의 현대적 해석과 AI를 활용한 새로운 인문학적 접근에도 관심을 기울이고 있습니다.</p>
+                        <blockquote class="accent-quote" data-i18n="about_quote">
+                            "학문은 과거와 현재를 잇는 대화이며, 사람과 시대를 이해하는 창입니다."
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="research" class="section alt-bg">
+            <div class="container">
+                <div class="section-header centered">
+                    <span class="section-badge" data-i18n="section_research_badge">RESEARCH</span>
+                    <h2 class="section-title" data-i18n="section_research_title">주요 연구 분야</h2>
+                </div>
+                <div class="research-grid">
+                    <div class="research-item">
+                        <div class="icon">📜</div>
+                        <h3 data-i18n="research_1_title">중국고전산문</h3>
+                        <p data-i18n="research_1_desc">당송팔대가를 비롯한 중국 고전 산문의 문체와 사상적 배경을 심도 있게 연구합니다.</p>
+                    </div>
+                    <div class="research-item">
+                        <div class="icon">🎎</div>
+                        <h3 data-i18n="research_2_title">중국고전문학비평</h3>
+                        <p data-i18n="research_2_desc">고전 문학 이론과 비평사적 맥락을 통해 문학적 가치를 분석하고 재조명합니다.</p>
+                    </div>
+                    <div class="research-item">
+                        <div class="icon">✒️</div>
+                        <h3 data-i18n="research_3_title">한중비교문학</h3>
+                        <p data-i18n="research_3_desc">한국과 중국 문학 간의 상호 영향과 교류 양상을 비교 문학적 관점에서 고찰합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="publications" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-badge" data-i18n="section_pub_badge">PUBLICATIONS</span>
+                    <h2 class="section-title" data-i18n="section_pub_title">학술 및 저술 활동</h2>
+                </div>
+                <div class="pub-tabs">
+                    <button class="tab-btn active" data-tab="books" data-i18n="pub_tab_books">저서</button>
+                    <button class="tab-btn" data-tab="papers" data-i18n="pub_tab_papers">학술지 논문</button>
+                </div>
+                <div class="tab-content" id="pub-content-area">
+                    <!-- Books content -->
+                    <div class="pub-list" id="books-list">
+                        <div class="pub-card">
+                            <div class="pub-date">2011</div>
+                            <div class="pub-info">
+                                <h4 data-i18n="pub_book_1_title">『중국미술사2 (위진부터 수당까지)』</h4>
+                                <p data-i18n="pub_book_1_info">김미라, 홍기용 공역 | 다른 생각 | 2011.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Papers content -->
+                    <div class="pub-list" id="papers-list" style="display:none;">
+                        <div class="pub-card">
+                            <div class="pub-date">2025</div>
+                            <div class="pub-info">
+                                <h4 data-i18n="pub_paper_1_title">「柳宗元의 『永州八記』의 認知的 解釋 初探—AI 이미지 생성과의 연계 시도를 겸하며」</h4>
+                                <p data-i18n="pub_paper_1_info">『中國散文硏究集刊』 18집, 2025.06.</p>
+                            </div>
+                        </div>
+                        <div class="pub-card">
+                            <div class="pub-date">2024</div>
+                            <div class="pub-info">
+                                <h4 data-i18n="pub_paper_2_title">「왕우칭[王禹偁]의 율부 창작 시론」</h4>
+                                <p data-i18n="pub_paper_2_info">『한국인문융합연구』제1집, 2024.12.</p>
+                            </div>
+                        </div>
+                        <div class="pub-card">
+                            <div class="pub-date">2024</div>
+                            <div class="pub-info">
+                                <h4 data-i18n="pub_paper_3_title">「王禹偁의 『莊子』 제재 律賦 創作 小考」</h4>
+                                <p data-i18n="pub_paper_3_info">『열린정신 인문학 연구』 25집 제3호, 2024.12.</p>
+                            </div>
+                        </div>
+                        <div class="pub-card">
+                            <div class="pub-date">2023</div>
+                            <div class="pub-info">
+                                <h4 data-i18n="pub_paper_4_title">「‘養花’와 ‘賞花’, 송대 도시 문인의 소확행 : 歐陽修의 ≪洛陽牡丹記≫를 중심으로」</h4>
+                                <p data-i18n="pub_paper_4_info">『中國散文硏究集刊』 15집, 2023.12.</p>
+                            </div>
+                        </div>
+                        <div class="pub-card">
+                            <div class="pub-date">2022</div>
+                            <div class="pub-info">
+                                <h4 data-i18n="pub_paper_5_title">「배움과 기록의 전범화 고찰: 茅坤의 ≪唐宋八大家文鈔≫ 수록 ‘學記’를 중심으로」</h4>
+                                <p data-i18n="pub_paper_5_info">『中國散文硏究集刊』 13집, 2022.12.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section alt-bg">
+            <div class="container">
+                <div class="contact-box">
+                    <div class="contact-info">
+                        <h2 data-i18n="contact_title">CONTACT</h2>
+                        <p data-i18n="contact_desc">강연 의뢰, 학술 교류 및 기타 문의는 아래 연락처로 주시기 바랍니다.</p>
+                        <div class="info-items">
+                            <div class="info-item">
+                                <span class="label" data-i18n="contact_label_phone">Phone</span>
+                                <span class="value">063-850-7123</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-i18n="contact_label_email">Email</span>
+                                <span class="value">teresamay@naver.com</span>
+                            </div>
+                            <div class="info-item">
+                                <span class="label" data-i18n="contact_label_office">Office</span>
+                                <span class="value" data-i18n="contact_office_value">원광대학교 한중관계연구원 4층</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form-area">
+                        <form id="contact-form">
+                            <div class="form-group">
+                                <input type="text" placeholder="성함" data-i18n-placeholder="form_placeholder_name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" placeholder="이메일" data-i18n-placeholder="form_placeholder_email" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea placeholder="메시지 내용을 입력하세요" data-i18n-placeholder="form_placeholder_message" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width" data-i18n="form_submit">보내기</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="wku-text-kr" data-i18n="wku_name">원광대학교</span>
+                </div>
+                <p class="copyright" data-i18n="footer_copyright">&copy; 2026 Professor Mira Kim. All rights reserved. Designed for WKU Research.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" title="Go to top" data-i18n-title="back_to_top_title">↑</button>
+
+    <script src="main.js"></script>
+</body>
+</html>
