@@ -97,22 +97,19 @@ img {
     gap: 1.5rem;
 }
 
-.wku-logo {
+.wku-logo-link {
     display: flex;
-    flex-direction: column;
-    color: var(--primary-color);
-    font-weight: 900;
+    align-items: center;
 }
 
-.wku-text-kr {
-    font-size: 1.5rem;
-    letter-spacing: -0.5px;
-    line-height: 1.2;
+.wku-logo-img {
+    height: 42px;
+    width: auto;
+    display: block;
+    transition: var(--transition);
 }
 
-.wku-text-en {
-    font-size: 0.65rem;
-    letter-spacing: 1.5px;
+.wku-logo-link:hover .wku-logo-img {
     opacity: 0.8;
 }
 
