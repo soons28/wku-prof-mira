@@ -17,6 +17,10 @@ document.addEventListener('DOMContentLoaded', () => {
         title: document.querySelectorAll('[data-i18n-title]')
     };
 
+    const langSelector = document.querySelector('.lang-selector');
+    const langBtn = document.querySelector('.lang-btn');
+    const langDropdown = document.querySelector('.lang-dropdown');
+
     const updateLanguage = (lang) => {
         const t = translations[lang];
         if (!t) return;
@@ -58,35 +62,63 @@ document.addEventListener('DOMContentLoaded', () => {
             if (metaDesc) metaDesc.setAttribute('content', t.site_description);
         }
 
-        const langNames = { 
-            ko: "한국어", 
-            en: "English", 
-            zh: "中文", 
-            ja: "日本語", 
-            de: "Deutsch", 
-            es: "Español",
-            ne: "नेपाली",
-            mn: "Монгол",
-            vi: "Tiếng Việt",
-            bn: "বাংলা",
-            az: "Azərbaycan",
-            uz: "O'zbek",
-            id: "Bahasa Indonesia",
-            zh_hant: "繁體中文",
-            kk: "Қазақша",
-            th: "ไทย"
+        const langData = { 
+            ko: { flag: "🇰🇷", name: "한국어" }, 
+            en: { flag: "🇺🇸", name: "English" }, 
+            zh: { flag: "🇨🇳", name: "中文" }, 
+            ja: { flag: "🇯🇵", name: "日本語" }, 
+            de: { flag: "🇩🇪", name: "Deutsch" }, 
+            es: { flag: "🇪🇸", name: "Español" },
+            ne: { flag: "🇳🇵", name: "नेपाली" },
+            mn: { flag: "🇲🇳", name: "Монгол" },
+            vi: { flag: "🇻🇳", name: "Tiếng Việt" },
+            bn: { flag: "🇧🇩", name: "বাংলা" },
+            az: { flag: "🇦🇿", name: "Azərbaycan" },
+            uz: { flag: "🇺🇿", name: "O'zbek" },
+            id: { flag: "🇮🇩", name: "Bahasa Indonesia" },
+            zh_hant: { flag: "🇭🇰", name: "繁體中文" },
+            kk: { flag: "🇰🇿", name: "Қазақша" },
+            th: { flag: "🇹🇭", name: "ไทย" }
         };
         
         if (currentLangText) {
-            currentLangText.innerText = langNames[lang] || lang;
+            const data = langData[lang] || { flag: "", name: lang };
+            currentLangText.innerHTML = `<span class="flag-icon">${data.flag}</span> ${data.name}`;
         }
+        
         localStorage.setItem('preferredLang', lang);
+
+        // Update URL without reloading (optional, helps with user's question about URL)
+        const url = new URL(window.location);
+        url.searchParams.set('lang', lang);
+        window.history.replaceState({}, '', url);
     };
 
+    // Toggle dropdown
+    if (langBtn) {
+        langBtn.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isExpanded = langBtn.getAttribute('aria-expanded') === 'true';
+            langBtn.setAttribute('aria-expanded', !isExpanded);
+            langSelector.classList.toggle('active');
+        });
+    }
+
+    // Close dropdown when clicking outside
+    document.addEventListener('click', () => {
+        if (langBtn) {
+            langBtn.setAttribute('aria-expanded', 'false');
+            langSelector.classList.remove('active');
+        }
+    });
+
     langOptions.forEach(option => {
-        option.addEventListener('click', () => {
+        option.addEventListener('click', (e) => {
+            e.stopPropagation();
             const lang = option.getAttribute('data-lang');
             updateLanguage(lang);
+            langBtn.setAttribute('aria-expanded', 'false');
+            langSelector.classList.remove('active');
         });
     });
 

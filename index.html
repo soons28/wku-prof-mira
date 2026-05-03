@@ -59,27 +59,27 @@
                 </ul>
                 
                 <div class="lang-selector">
-                    <button class="lang-btn">
-                        <span class="icon">🌐</span>
-                        <span class="current-lang">한국어</span>
+                    <button class="lang-btn" aria-haspopup="listbox" aria-expanded="false">
+                        <span class="current-lang"><span class="flag-icon">🇰🇷</span> 한국어</span>
+                        <svg class="dropdown-icon" viewBox="0 0 24 24" width="16" height="16"><path d="M7 10l5 5 5-5z" fill="currentColor"/></svg>
                     </button>
-                    <ul class="lang-dropdown">
-                        <li data-lang="ko">한국어</li>
-                        <li data-lang="en">English</li>
-                        <li data-lang="zh">中文</li>
-                        <li data-lang="ja">日本語</li>
-                        <li data-lang="de">Deutsch</li>
-                        <li data-lang="es">Español</li>
-                        <li data-lang="vi">Tiếng Việt</li>
-                        <li data-lang="id">Bahasa Indonesia</li>
-                        <li data-lang="th">ไทย</li>
-                        <li data-lang="mn">Монгол</li>
-                        <li data-lang="ne">नेपाली</li>
-                        <li data-lang="uz">O'zbek</li>
-                        <li data-lang="az">Azərbaycan</li>
-                        <li data-lang="kk">Қазақ</li>
-                        <li data-lang="bn">বাংলা</li>
-                        <li data-lang="zh_hant">繁體中文</li>
+                    <ul class="lang-dropdown" role="listbox">
+                        <li data-lang="ko" role="option"><span class="flag-icon">🇰🇷</span> 한국어</li>
+                        <li data-lang="en" role="option"><span class="flag-icon">🇺🇸</span> English</li>
+                        <li data-lang="zh" role="option"><span class="flag-icon">🇨🇳</span> 中文(简体)</li>
+                        <li data-lang="zh_hant" role="option"><span class="flag-icon">🇭🇰</span> 繁體中文</li>
+                        <li data-lang="ja" role="option"><span class="flag-icon">🇯🇵</span> 日本語</li>
+                        <li data-lang="de" role="option"><span class="flag-icon">🇩🇪</span> Deutsch</li>
+                        <li data-lang="es" role="option"><span class="flag-icon">🇪🇸</span> Español</li>
+                        <li data-lang="vi" role="option"><span class="flag-icon">🇻🇳</span> Tiếng Việt</li>
+                        <li data-lang="id" role="option"><span class="flag-icon">🇮🇩</span> Bahasa Indonesia</li>
+                        <li data-lang="th" role="option"><span class="flag-icon">🇹🇭</span> ไทย</li>
+                        <li data-lang="mn" role="option"><span class="flag-icon">🇲🇳</span> Монгол</li>
+                        <li data-lang="ne" role="option"><span class="flag-icon">🇳🇵</span> नेपाली</li>
+                        <li data-lang="uz" role="option"><span class="flag-icon">🇺🇿</span> O'zbek</li>
+                        <li data-lang="az" role="option"><span class="flag-icon">🇦🇿</span> Azərbaycan</li>
+                        <li data-lang="kk" role="option"><span class="flag-icon">🇰🇿</span> Қазақша</li>
+                        <li data-lang="bn" role="option"><span class="flag-icon">🇧🇩</span> বাংলা</li>
                     </ul>
                 </div>
             </nav>
@@ -264,7 +264,7 @@
                         <div class="info-items">
                             <div class="info-item">
                                 <span class="label" data-i18n="contact_label_phone">Phone</span>
-                                <span class="value" data-i18n="contact_phone_value">063-850-7120</span>
+                                <span class="value" data-i18n="contact_phone_value">+82-63-850-7120</span>
                             </div>
                             <div class="info-item">
                                 <span class="label" data-i18n="contact_label_email">Email</span>
@@ -272,7 +272,7 @@
                             </div>
                             <div class="info-item">
                                 <span class="label" data-i18n="contact_label_office">Office</span>
-                                <span class="value" data-i18n="contact_office_value">전라북도 익산시 익산대로460 원광대학교 학군단 3층 한중관계연구원</span>
+                                <span class="value" data-i18n="contact_office_value">전라북도 익산시 익산대로 460 원광대학교 학군단 3층 한중관계연구원 (대한민국)</span>
                             </div>
                         </div>
                     </div>
@@ -309,7 +309,7 @@
 
     <button id="back-to-top" title="Go to top" data-i18n-title="back_to_top_title">↑</button>
 
-    <script src="translations_fixed.js?v=1.0.2"></script>
-    <script src="main.js?v=1.0.2"></script>
+    <script src="translations_fixed.js?v=1.0.4"></script>
+    <script src="main.js?v=1.0.4"></script>
 </body>
 </html>

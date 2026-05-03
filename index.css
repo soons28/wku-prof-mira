@@ -202,13 +202,13 @@ img {
 /* Language Selector */
 .lang-selector {
     position: relative;
-    margin-left: 2rem;
+    margin-left: 1.5rem;
 }
 
 .lang-btn {
     background: var(--white);
     border: 1px solid var(--accent-gold-light);
-    padding: 0.6rem 1.2rem;
+    padding: 0.5rem 1rem;
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -220,43 +220,59 @@ img {
     color: var(--text-dark);
     box-shadow: 0 4px 10px rgba(0,0,0,0.03);
     outline: none;
+    min-width: 120px;
 }
 
-.lang-btn:hover {
+.lang-btn:hover, .lang-selector.active .lang-btn {
     border-color: var(--primary-color);
     color: var(--primary-color);
     box-shadow: 0 6px 15px rgba(128, 0, 32, 0.1);
 }
 
+.current-lang {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.flag-icon {
+    font-size: 1.2rem;
+    line-height: 1;
+}
+
 .lang-dropdown {
     position: absolute;
-    top: 130%;
+    top: calc(100% + 10px);
     right: 0;
     background-color: var(--white);
     border: 1px solid var(--accent-gold-light);
     border-radius: 12px;
-    width: 140px;
+    width: 180px;
+    max-height: 400px;
+    overflow-y: auto;
     box-shadow: var(--shadow-medium);
     opacity: 0;
     visibility: hidden;
     transform: translateY(15px);
     transition: var(--transition);
-    overflow: hidden;
     z-index: 1001;
 }
 
-.lang-selector:hover .lang-dropdown {
+.lang-selector.active .lang-dropdown {
     opacity: 1;
     visibility: visible;
     transform: translateY(0);
 }
 
 .lang-dropdown li {
-    padding: 0.9rem 1.2rem;
+    padding: 0.8rem 1.2rem;
     font-size: 0.9rem;
     cursor: pointer;
     transition: var(--transition);
     border-bottom: 1px solid #f5f5f5;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
 }
 
 .lang-dropdown li:last-child {
@@ -266,7 +282,16 @@ img {
 .lang-dropdown li:hover {
     background-color: var(--bg-light);
     color: var(--primary-color);
-    padding-left: 1.6rem;
+    padding-left: 1.5rem;
+}
+
+.dropdown-icon {
+    margin-left: auto;
+    transition: transform 0.3s ease;
+}
+
+.lang-selector.active .dropdown-icon {
+    transform: rotate(180deg);
 }
 
 /* Hero Section */
