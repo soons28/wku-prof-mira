@@ -49,18 +49,20 @@ document.addEventListener('DOMContentLoaded', () => {
             pub_paper_4_title: "「‘養花’와 ‘賞花’, 송대 도시 문인의 소확행 : 歐陽修의 ≪洛陽牡丹記≫를 중심으로」",
             pub_paper_4_info: "『中國散文硏究集刊』 15집, 2023.12.",
             pub_paper_5_title: "「배움과 기록의 전범화 고찰: 茅坤의 ≪唐宋八大家文鈔≫ 수록 ‘學記’를 중심으로」",
-            pub_paper_5_info: "『中國散文硏究集刊』 13집, 2022.12.",
+            pub_paper_5_info: "『中國散文硏연구집刊』 13집, 2022.12.",
             contact_title: "CONTACT",
             contact_desc: "강연 의뢰, 학술 교류 및 기타 문의는 아래 연락처로 주시기 바랍니다.",
-            contact_label_phone: "Phone",
-            contact_label_email: "Email",
-            contact_label_office: "Office",
-            contact_office_value: "원광대학교 한중관계연구원 3층",
+            contact_label_phone: "연락처",
+            contact_label_email: "이메일",
+            contact_label_office: "연구실",
+            contact_office_value: "원광대학교 한중관계연구소 3층",
             contact_phone_value: "+82-63-850-7123",
             form_placeholder_name: "성함",
             form_placeholder_email: "이메일",
             form_placeholder_message: "메시지 내용을 입력하세요",
             form_submit: "보내기",
+            form_success: "메시지가 성공적으로 전송되었습니다.",
+            form_error: "오류가 발생했습니다. 나중에 다시 시도해 주세요.",
             footer_copyright: "© 2026 Professor Mira Kim. All rights reserved. Designed for WKU Research.",
             wku_name_en: "WONKWANG UNIVERSITY",
             nav_mobile_toggle: "메뉴 토글",
@@ -126,6 +128,8 @@ document.addEventListener('DOMContentLoaded', () => {
             form_placeholder_email: "Email",
             form_placeholder_message: "Enter your message here",
             form_submit: "Send",
+            form_success: "Message sent successfully.",
+            form_error: "An error occurred. Please try again later.",
             footer_copyright: "© 2026 Professor Mira Kim. All rights reserved.",
             wku_name_en: "WONKWANG UNIVERSITY",
             nav_mobile_toggle: "Toggle Menu",
@@ -143,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_sub_title: "学术与智慧的和谐",
             prof_name: "金美罗",
             prof_title_suffix: "教授",
-            hero_desc: "在圆光大学韩中关系研究院研究中国古典文学，致力于连接传统深度与现代视角的学术桥梁。",
+            hero_desc: "在圆光大学韩중关系研究院研究中国古典文学，致力于连接传统深度与现代视角的学术桥梁。",
             hero_btn_research: "查看研究",
             hero_btn_contact: "联系我们",
             prof_img_alt: "金美罗教授 个人照片",
@@ -154,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
             about_history_1_desc: "圆光大学 韩中关系研究院 研究教授",
             about_history_2_date: "最终学位",
             about_history_2_desc: "中国复旦大学 文学博士 (中国古代文学)",
-            about_content_p1: "在复旦大学获得博士学位后，致力于中国古典散文、文学批评及韩中比较文学领域的深入研究。",
+            about_content_p1: "在复旦大学获得博士学位后，致力于中国古典散文、文学批评 및 韩中比较文学领域的深入研究。",
             about_quote: '“学术是连接过去与现在的对话，是理解人和时代的窗口。”',
             section_research_badge: "研究",
             section_research_title: "主要研究领域",
@@ -191,6 +195,8 @@ document.addEventListener('DOMContentLoaded', () => {
             form_placeholder_email: "邮箱",
             form_placeholder_message: "请输入留言内容",
             form_submit: "发送",
+            form_success: "消息已成功发送。",
+            form_error: "发生错误。请稍后再试。",
             footer_copyright: "© 2026 金美罗教授。版权所有。",
             wku_name_en: "WONKWANG UNIVERSITY",
             nav_mobile_toggle: "切换菜单",
@@ -198,7 +204,7 @@ document.addEventListener('DOMContentLoaded', () => {
         },
         ja: {
             site_title: "キム・ミラ教授 - 円光大学",
-            site_description: "円光大学韓中関係研究院キム・ミラ研究教授の公式サイト。中国古典散文、文学批評、韓中比較文学の研究成果を紹介します。",
+            site_description: "円光大学韓中関係研究院キム・ミラ연구교수의 공식 홈페이지입니다. 중국고전산문, 문학비평 및 한중비교문학 연구 성과를 소개합니다.",
             wku_name: "円光大学",
             header_title: "韓中関係研究院 研究教授",
             nav_profile: "プロフィール",
@@ -208,45 +214,45 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_sub_title: "学問と知恵の調和",
             prof_name: "キム・ミラ",
             prof_title_suffix: "教授",
-            hero_desc: "円光大学韓中関係研究院で中国古典文学를 연구하며, 전통의 깊이와 현대의 시각을 잇는 학문적 가교 역할을 하고 있습니다.",
+            hero_desc: "円光大学韓中関係研究院で中国古典文学を研究하며, 전통의 깊이와 현대의 시각을 잇는 학문적 가교 역할을 하고 있습니다.",
             hero_btn_research: "研究を見る",
             hero_btn_contact: "お問い合わせ",
             prof_img_alt: "キム・ミラ教授のプロフィール写真",
             section_about_badge: "ABOUT",
-            section_about_title: "学問の旅",
-            about_history_title: "学歴・経歴",
+            section_about_title: "学問의 여정",
+            about_history_title: "学歴 및 経歴",
             about_history_1_date: "現在",
             about_history_1_desc: "円光大学 韓中関係研究院 研究教授",
             about_history_2_date: "学位",
             about_history_2_desc: "中国復旦大学 文学博士 (中国古代文学)",
-            about_content_p1: "復旦大学で博士号取得後、中国古典散文、文学批評、韓中比較文学の分野で深い研究を行っています。",
-            about_quote: '「学問は過去と現在を繋ぐ対話であり、人と時代を理解する窓です」',
+            about_content_p1: "復旦大学で博士号取得後、中国古典散문, 문학비평 및 한중비교문학의 분야에서 깊은 연구를 하고 있습니다.",
+            about_quote: '「学問은 과거와 현재를 잇는 대화이며, 사람과 시대를 이해하는 창입니다」',
             section_research_badge: "RESEARCH",
-            section_research_title: "主な研究分野",
+            section_research_title: "주요 연구 분야",
             research_1_title: "中国古典散文",
-            research_1_desc: "唐宋八大家をはじめとする中国古典散文の文体と思想的背景を研究します。",
+            research_1_desc: "唐宋八大家をはじめとする中国古典散文의 문체와 사상적 배경을 연구합니다.",
             research_2_title: "中国古典文学批評",
-            research_2_desc: "古典文学理論と批評史的文脈を通じて文学的価値を分析します。",
+            research_2_desc: "古典文学理論과 비평사적 문맥을 통해 문학적 가치를 분석합니다.",
             research_3_title: "韓中比較文学",
-            research_3_desc: "韓国と中国文学の相互影響と交流様相を比較文学的観点から考察します。",
+            research_3_desc: "한국과 중국 문학 간의 상호 영향과 교류 양상을 비교 문학적 관점에서 고찰합니다.",
             section_pub_badge: "PUBLICATIONS",
-            section_pub_title: "学術・著述活動",
+            section_pub_title: "학술 및 저술 활동",
             pub_tab_books: "著書",
             pub_tab_papers: "学術論文",
-            pub_book_1_title: "『中国美術史2（魏晋から隋唐まで）』",
+            pub_book_1_title: "『中国美術史2（위진부터 수당까지）』",
             pub_book_1_info: "キム・ミラ、ホン・ギヨン共訳 | 他の考え | 2011.",
             pub_paper_1_title: "「柳宗元『永州八記』の認知的解釈初探—AI画像生成との連携試みを兼ねて」",
             pub_paper_1_info: "『中国散文研究集刊』第18集、2025.06.",
             pub_paper_2_title: "「王禹偁の律賦創作試論」",
-            pub_paper_2_info: "『韓国人文融合研究』第1集、2024.12.",
+            pub_paper_2_info: "『한국인문융합연구』제1집, 2024.12.",
             pub_paper_3_title: "「王禹偁の『荘子』を題材とした律賦創作小考」",
-            pub_paper_3_info: "『開かれた精神人文学研究』第25巻第3号、2024.12.",
-            pub_paper_4_title: "「『養花』と『賞花』、宋代都市文人の小さな幸せ：欧陽修『洛陽牡丹記』を中心に」",
+            pub_paper_3_info: "『열린정신 인문학 연구』 25집 제3호, 2024.12.",
+            pub_paper_4_title: "「『養花』と『賞花』、宋代都市文人の소확행：欧陽修『洛陽牡丹記』を中心に」",
             pub_paper_4_info: "『中国散文研究集刊』第15集、2023.12.",
-            pub_paper_5_title: "「学びと記録の典範化考察：茅坤『唐宋八大家文鈔』収録『学記』を中心に」",
+            pub_paper_5_title: "「배움과 기록의 전범화 고찰：茅坤『唐宋八大家文鈔』収録『学記』を中心に」",
             pub_paper_5_info: "『中国散文研究集刊』第13集、2022.12.",
             contact_title: "CONTACT",
-            contact_desc: "講演依頼、学術交流などのお問い合わせは、下記までご連絡ください。",
+            contact_desc: "강연 의뢰, 학술 교류 및 기타 문의는 아래 연락처로 주시기 바랍니다.",
             contact_label_phone: "電話",
             contact_label_email: "メール",
             contact_label_office: "研究室",
@@ -254,12 +260,14 @@ document.addEventListener('DOMContentLoaded', () => {
             contact_phone_value: "+82-63-850-7123",
             form_placeholder_name: "お名前",
             form_placeholder_email: "メールアドレス",
-            form_placeholder_message: "メッセージを入力してください",
+            form_placeholder_message: "메시지 내용을 입력하세요",
             form_submit: "送信",
-            footer_copyright: "© 2026 キム・ミラ教授。全著作権所有。",
+            form_success: "メッセージが送信されました。",
+            form_error: "エラーが発生しました。後でやり直してください。",
+            footer_copyright: "© 2026 Professor Mira Kim. All rights reserved.",
             wku_name_en: "WONKWANG UNIVERSITY",
-            nav_mobile_toggle: "メニュー切替",
-            back_to_top_title: "トップへ戻る"
+            nav_mobile_toggle: "메뉴 토글",
+            back_to_top_title: "맨 위로 이동"
         },
         de: {
             site_title: "Professorin Mira Kim - Wonkwang Universität",
@@ -321,6 +329,8 @@ document.addEventListener('DOMContentLoaded', () => {
             form_placeholder_email: "E-Mail",
             form_placeholder_message: "Ihre Nachricht hier eingeben",
             form_submit: "Absenden",
+            form_success: "Nachricht erfolgreich gesendet.",
+            form_error: "Ein Fehler ist aufgetreten. Bitte versuchen Sie es später erneut.",
             footer_copyright: "© 2026 Professorin Mira Kim. Alle Rechte vorbehalten.",
             wku_name_en: "WONKWANG UNIVERSITY",
             nav_mobile_toggle: "Menü umschalten",
@@ -386,6 +396,8 @@ document.addEventListener('DOMContentLoaded', () => {
             form_placeholder_email: "Correo electrónico",
             form_placeholder_message: "Ingrese su mensaje aquí",
             form_submit: "Enviar",
+            form_success: "Mensaje enviado con éxito.",
+            form_error: "Ocurrió un error. Por favor, inténtelo de nuevo más tarde.",
             footer_copyright: "© 2026 Profesora Mira Kim. Todos los derechos reservados.",
             wku_name_en: "WONKWANG UNIVERSITY",
             nav_mobile_toggle: "Alternar menú",
@@ -412,31 +424,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.querySelectorAll('[data-i18n-placeholder]').forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
             if (t[key]) {
-                el.placeholder = t[key];
-            }
-        });
-
-        // Update alt tags
-        document.querySelectorAll('[data-i18n-alt]').forEach(el => {
-            const key = el.getAttribute('data-i18n-alt');
-            if (t[key]) {
-                el.alt = t[key];
-            }
-        });
-
-        // Update titles
-        document.querySelectorAll('[data-i18n-title]').forEach(el => {
-            const key = el.getAttribute('data-i18n-title');
-            if (t[key]) {
-                el.title = t[key];
-            }
-        });
-
-        // Update aria-labels
-        document.querySelectorAll('[data-i18n-aria-label]').forEach(el => {
-            const key = el.getAttribute('data-i18n-aria-label');
-            if (t[key]) {
-                el.setAttribute('aria-label', t[key]);
+                el.setAttribute('placeholder', t[key]);
             }
         });
 
@@ -459,6 +447,54 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // Real Form Submission with Formspree
+    const contactForm = document.getElementById('contact-form');
+    if (contactForm) {
+        contactForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const btn = contactForm.querySelector('button');
+            const originalText = btn.innerText;
+            const currentLang = localStorage.getItem('preferredLang') || 'ko';
+            
+            // Loading state
+            btn.innerText = currentLang === 'ko' ? '전송 중...' : 'Sending...';
+            btn.disabled = true;
+
+            const formStatus = document.getElementById('form-status');
+            if (formStatus) formStatus.className = 'form-status'; // Reset
+
+            const formData = new FormData(contactForm);
+            
+            try {
+                const response = await fetch(contactForm.action, {
+                    method: contactForm.method,
+                    body: formData,
+                    headers: {
+                        'Accept': 'application/json'
+                    }
+                });
+
+                if (response.ok) {
+                    if (formStatus) {
+                        formStatus.innerText = translations[currentLang].form_success;
+                        formStatus.classList.add('success');
+                    }
+                    contactForm.reset();
+                } else {
+                    throw new Error('Form submission failed');
+                }
+            } catch (error) {
+                if (formStatus) {
+                    formStatus.innerText = translations[currentLang].form_error;
+                    formStatus.classList.add('error');
+                }
+            } finally {
+                btn.innerText = originalText;
+                btn.disabled = false;
+            }
+        });
+    }
+
     // Mobile Navigation Logic
     const mobileToggle = document.querySelector('.mobile-nav-toggle');
     const navMenu = document.getElementById('nav-menu');
@@ -478,6 +514,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Initial language setup
     const savedLang = localStorage.getItem('preferredLang') || 'ko';
     updateLanguage(savedLang);
 
@@ -540,34 +577,6 @@ document.addEventListener('DOMContentLoaded', () => {
     `;
     document.head.appendChild(style);
 
-    // Form submission mock
-    const contactForm = document.getElementById('contact-form');
-    if (contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            const btn = contactForm.querySelector('button');
-            const originalText = btn.innerText;
-            btn.innerText = '...';
-            btn.disabled = true;
-
-            setTimeout(() => {
-                const currentLang = localStorage.getItem('preferredLang') || 'ko';
-                const msg = {
-                    ko: '메시지가 성공적으로 전송되었습니다.',
-                    en: 'Message sent successfully.',
-                    zh: '消息已成功发送。',
-                    ja: 'メッセージが送信されました。',
-                    de: 'Nachricht erfolgreich gesendet.',
-                    es: 'Mensaje enviado con éxito.'
-                };
-                alert(msg[currentLang]);
-                btn.innerText = originalText;
-                btn.disabled = false;
-                contactForm.reset();
-            }, 1000);
-        });
-    }
-
     // Back to Top Logic
     const backToTopBtn = document.getElementById('back-to-top');
     window.addEventListener('scroll', () => {
@@ -577,7 +586,6 @@ document.addEventListener('DOMContentLoaded', () => {
             backToTopBtn.classList.remove('visible');
         }
     });
-
 
     // Hero Parallax Effect
     document.addEventListener('mousemove', (e) => {

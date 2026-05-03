@@ -1107,7 +1107,7 @@ footer {
     }
     .hero-image {
         order: -1;
-        max-width: 350px;
+        max-width: min(350px, 90%);
         margin: 0 auto;
     }
     .main-name {
@@ -1139,17 +1139,22 @@ footer {
         margin-bottom: 3rem;
     }
     .hero-text-box {
-        padding: 2.5rem 1.5rem;
+        padding: 2.5rem 1.2rem;
+        background: rgba(255, 255, 255, 0.85); /* Much more opaque for mobile visibility */
+        border-radius: 16px;
     }
     .main-name {
         font-size: 3.2rem;
     }
     .hero-desc {
-        font-size: 1.15rem;
+        font-size: 1.1rem;
         padding-top: 1.5rem;
-        color: var(--text-dark); /* Using variable for consistency */
-        font-weight: 600; /* Slightly bolder for mobile visibility */
-        line-height: 1.8;
+        color: var(--text-dark);
+        font-weight: 500;
+        line-height: 1.6;
+        background: rgba(255, 255, 255, 0.3); /* Add a subtle background for text contrast */
+        padding: 1.5rem;
+        border-radius: 8px;
     }
     .about-card {
         padding: 2.5rem;
@@ -1320,4 +1325,35 @@ footer {
     .contact-info h2 {
         font-size: 2.2rem;
     }
+}
+
+/* Form Status Messages */
+.form-status {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    display: none;
+    text-align: center;
+    font-weight: 500;
+    animation: fadeInStatus 0.3s ease-out;
+}
+
+.form-status.success {
+    display: block;
+    background-color: rgba(46, 125, 50, 0.1);
+    color: #2e7d32;
+    border: 1px solid rgba(46, 125, 50, 0.2);
+}
+
+.form-status.error {
+    display: block;
+    background-color: rgba(198, 40, 40, 0.1);
+    color: #c62828;
+    border: 1px solid rgba(198, 40, 40, 0.2);
+}
+
+@keyframes fadeInStatus {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
 }

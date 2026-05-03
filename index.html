@@ -5,26 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
     <!-- Primary Meta Tags -->
-    <title data-i18n="head_title">김미라 교수 - 원광대학교 한중관계연구원</title>
+    <title data-i18n="head_title">김미라 교수 - 원광대학교 한중관계연구소</title>
     <meta name="naver-site-verification" content="3cbf6fca6d89499ab78638f81fd352a9afde19bc" />
     <meta name="google-site-verification" content="PB7bHtg4899qkT-vyNjA3flc7D8nRf-MCUhfBxb5Y5Q" />
-    <meta name="title" content="김미라 교수 - 원광대학교 한중관계연구원">
-    <meta name="description" content="원광대학교 한중관계연구원 김미라 교수 공식 홈페이지. 중국 고전산문, 문학비평, 한중비교문학 연구 및 주요 저서 안내.">
-    <meta name="keywords" content="김미라, 원광대학교, 한중관계연구원, 중국고전문학, 중국고전산문, 중국미술사, 복단대학, 인문학">
+    <meta name="title" content="김미라 교수 - 원광대학교 한중관계연구소">
+    <meta name="description" content="원광대학교 한중관계연구소 김미라 교수 공식 홈페이지. 중국 고전산문, 문학비평, 한중비교문학 연구 및 주요 저서 안내.">
+    <meta name="keywords" content="김미라, 원광대학교, 한중관계연구소, 중국고전문학, 중국고전산문, 중국미술사, 복단대학, 인문학">
     <meta name="author" content="Professor Mira Kim">
     <link rel="canonical" href="https://wku-prof-mira.vercel.app/">
 
     <!-- Open Graph / Facebook (For Naver & Kakao) -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://wku-prof-mira.vercel.app/">
-    <meta property="og:title" content="김미라 교수 - 원광대학교 한중관계연구원">
+    <meta property="og:title" content="김미라 교수 - 원광대학교 한중관계연구소">
     <meta property="og:description" content="중국 고전문학의 깊이를 현대적 시각으로 잇는 학문적 여정.">
     <meta property="og:image" content="https://wku-prof-mira.vercel.app/profile.jpg">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://wku-prof-mira.vercel.app/">
-    <meta property="twitter:title" content="김미라 교수 - 원광대학교 한중관계연구원">
+    <meta property="twitter:title" content="김미라 교수 - 원광대학교 한중관계연구소">
     <meta property="twitter:description" content="중국 고전문학 연구자 김미라 교수의 연구 및 활동 소개.">
     <meta property="twitter:image" content="https://wku-prof-mira.vercel.app/profile.jpg">
 
@@ -42,7 +42,7 @@
                     <span class="wku-text-en" data-i18n="wku_name_en">WONKWANG UNIVERSITY</span>
                 </div>
                 <div class="vertical-divider"></div>
-                <div class="prof-title" data-i18n="header_title">한중관계연구원 연구교수</div>
+                <div class="prof-title" data-i18n="header_title">한중관계연구소 연구교수</div>
             </div>
             
             <button class="mobile-nav-toggle" aria-label="Toggle Navigation" data-i18n-aria-label="nav_mobile_toggle">
@@ -263,22 +263,23 @@
                             </div>
                             <div class="info-item">
                                 <span class="label" data-i18n="contact_label_office">Office</span>
-                                <span class="value" data-i18n="contact_office_value">원광대학교 한중관계연구원 3층</span>
+                                <span class="value" data-i18n="contact_office_value">원광대학교 한중관계연구소 3층</span>
                             </div>
                         </div>
                     </div>
                     <div class="contact-form-area">
-                        <form id="contact-form">
+                        <form id="contact-form" action="https://formspree.io/f/teresamay@naver.com" method="POST">
                             <div class="form-group">
-                                <input type="text" placeholder="성함" data-i18n-placeholder="form_placeholder_name" required>
+                                <input type="text" name="name" placeholder="성함" data-i18n-placeholder="form_placeholder_name" required>
                             </div>
                             <div class="form-group">
-                                <input type="email" placeholder="이메일" data-i18n-placeholder="form_placeholder_email" required>
+                                <input type="email" name="email" placeholder="이메일" data-i18n-placeholder="form_placeholder_email" required>
                             </div>
                             <div class="form-group">
-                                <textarea placeholder="메시지 내용을 입력하세요" data-i18n-placeholder="form_placeholder_message" rows="4" required></textarea>
+                                <textarea name="message" placeholder="메시지 내용을 입력하세요" data-i18n-placeholder="form_placeholder_message" rows="4" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary full-width" data-i18n="form_submit">보내기</button>
+                            <div id="form-status" class="form-status"></div>
                         </form>
                     </div>
                 </div>
