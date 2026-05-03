@@ -614,6 +614,10 @@ img {
 
 .image-frame img {
     filter: sepia(10%) contrast(105%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 20%; /* Ensure face is visible on mobile crop */
 }
 
 /* Sections Header */
@@ -1085,8 +1089,8 @@ footer {
     }
     #hero {
         height: auto;
-        min-height: unset;
-        padding: 120px 0 80px;
+        min-height: 100vh;
+        padding: 140px 0 100px;
     }
     .hero-content {
         grid-template-columns: 1fr;
@@ -1109,8 +1113,9 @@ footer {
     }
     .hero-image {
         order: -1;
-        max-width: min(350px, 90%);
+        max-width: min(300px, 80%);
         margin: 0 auto;
+        aspect-ratio: 4 / 5;
     }
     .main-name {
         font-size: 4rem;
