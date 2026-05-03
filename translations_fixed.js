@@ -869,7 +869,7 @@ const translations = {
         wku_name_en: "WONKWANG UNIVERSITY",
         nav_mobile_toggle: "মেনু",
         back_to_top_title: "উপরে যান"
-    }
+    },
         vi: {
         site_title: "Giáo sư Mira Kim - Đại học Wonkwang",
         site_description: "Trang web chính thức của Giáo sư Mira Kim, Giáo sư Nghiên cứu tại Viện Quan hệ Hàn-Trung, Đại học Wonkwang.",
