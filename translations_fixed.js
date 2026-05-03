@@ -51,7 +51,7 @@ const translations = {
         contact_title: "CONTACT",
         contact_desc: "강연 의뢰, 학술 교류 및 기타 문의는 아래 연락처로 주시기 바랍니다.",
         contact_label_phone: "Phone",
-        contact_phone_value: "+82-63-850-7120",
+        contact_phone_value: "063-850-7120",
         contact_label_email: "Email",
         contact_label_office: "Office",
         contact_office_value: "전북특별자치도 익산시 익산대로 460 원광대학교 학군단 3층 한중관계연구원 (대한민국)",
