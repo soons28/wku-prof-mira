@@ -78,8 +78,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_publications: "Publications",
             nav_contact: "Contact",
             hero_sub_title: "Harmony of Wisdom & Academia",
-            prof_name: "Mira Kim",
-            prof_title_suffix: "Professor",
+            prof_name: "Professor Mira Kim",
+            prof_title_suffix: "",
             hero_desc: "Researching classical Chinese literature at Wonkwang University, serving as an academic bridge between tradition and modern perspective.",
             hero_btn_research: "View Research",
             hero_btn_contact: "Contact Me",
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             hero_sub_title: "学问与智慧的融合",
             prof_name: "金美羅",
             prof_title_suffix: "教授",
-            hero_desc: "在圆光大学韩중关系研究院从事中国古典文学研究，致力于搭建连接传统深度与现代视角的学术桥梁。",
+            hero_desc: "在圆光大学韩中关系研究院从事中国古典文学研究，致力于搭建连接传统深度与现代视角的学术桥梁。",
             hero_btn_research: "查看研究",
             hero_btn_contact: "咨询详情",
             prof_img_alt: "金美羅 教授 个人肖像",
@@ -279,8 +279,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_publications: "Publikationen",
             nav_contact: "Kontakt",
             hero_sub_title: "Harmonie von Weisheit und Wissenschaft",
-            prof_name: "Mira Kim",
-            prof_title_suffix: "Professorin",
+            prof_name: "Professorin Mira Kim",
+            prof_title_suffix: "",
             hero_desc: "Forschung zur klassischen chinesischen Literatur an der Wonkwang Universität als akademische Brücke zwischen Tradition und Moderne.",
             hero_btn_research: "Forschung ansehen",
             hero_btn_contact: "Kontaktieren",
@@ -346,8 +346,8 @@ document.addEventListener('DOMContentLoaded', () => {
             nav_publications: "Publicaciones",
             nav_contact: "Contacto",
             hero_sub_title: "Armonía de Sabiduría y Academia",
-            prof_name: "Mira Kim",
-            prof_title_suffix: "Profesora",
+            prof_name: "Profesora Mira Kim",
+            prof_title_suffix: "",
             hero_desc: "Investigadora de literatura clásica china en la Universidad Wonkwang, actuando como puente académico entre la tradición y la perspectiva moderna.",
             hero_btn_research: "Ver Investigación",
             hero_btn_contact: "Contactar",
@@ -417,6 +417,14 @@ document.addEventListener('DOMContentLoaded', () => {
             const key = el.getAttribute('data-i18n');
             if (t[key]) {
                 el.innerText = t[key];
+            }
+        });
+
+        // Update alt text
+        document.querySelectorAll('[data-i18n-alt]').forEach(el => {
+            const key = el.getAttribute('data-i18n-alt');
+            if (t[key]) {
+                el.setAttribute('alt', t[key]);
             }
         });
 
