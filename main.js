@@ -1,4 +1,4 @@
-﻿document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     // Real Professor Data & Multi-language translations
     const translations = {
         ko: {
@@ -189,7 +189,7 @@
             contact_label_phone: "电话",
             contact_label_email: "电子邮箱",
             contact_label_office: "办公室",
-            contact_office_value: "全罗北道益山市益山大路460圆光大学校ROTC楼3层韩中关系研究院",
+            contact_office_value: "全罗北道益山市益山大路460 圆光大学校 学军团3层 韩中关系研究院",
             contact_phone_value: "+82-63-850-7120",
             form_placeholder_name: "姓名",
             form_placeholder_email: "邮箱",
@@ -256,7 +256,7 @@
             contact_label_phone: "電話",
             contact_label_email: "Eメール",
             contact_label_office: "研究室",
-            contact_office_value: "全羅北道益山市益山大路460円光大学校ROTCビル3階韓中関係研究院",
+            contact_office_value: "全羅北道益山市益山大路460 円光大学校 学軍団3階 韓中関係研究院",
             contact_phone_value: "+82-63-850-7120",
             form_placeholder_name: "お名前",
             form_placeholder_email: "Eメール",
