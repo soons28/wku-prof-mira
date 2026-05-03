@@ -1011,10 +1011,15 @@ footer {
     gap: 2.5rem;
 }
 
-.footer-logo .wku-text-kr {
-    color: var(--white);
-    font-size: 1.8rem;
-    font-weight: 900;
+.footer-logo-img {
+    height: 50px;
+    width: auto;
+    opacity: 0.9;
+    transition: var(--transition);
+}
+
+.footer-logo-img:hover {
+    opacity: 1;
 }
 
 .footer-nav {
