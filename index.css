@@ -1,9 +1,9 @@
 :root {
     --primary-color: #800020; /* WKU Burgundy */
     --primary-light: #a52a2a;
-    --accent-gold: #9c7b3e; /* Darker Gold for better visibility on parchment */
-    --accent-gold-dark: #7d6232;
-    --accent-gold-light: #d4c19d;
+    --accent-gold: #8a6a2d; /* Even darker gold for maximum contrast on parchment */
+    --accent-gold-dark: #6b5224;
+    --accent-gold-light: #c5b08a;
     --text-dark: #1a1a1a;
     --text-light: #4a4a4a;
     --bg-light: #fcfaf5; /* Parchment/Paper like */
@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent; /* Remove blue flash on mobile tap */
 }
 
 html {
@@ -721,8 +722,8 @@ img {
 
 .history-list li span:first-child {
     font-size: 0.9rem;
-    color: var(--accent-gold-dark);
-    font-weight: 800;
+    color: var(--accent-gold); /* Darker gold for better visibility */
+    font-weight: 900;
     text-transform: uppercase;
     display: block;
     margin-bottom: 0.3rem;
@@ -736,7 +737,7 @@ img {
 
 .about-content p {
     font-size: 1.25rem;
-    color: var(--text-light);
+    color: var(--text-dark); /* Darker text for main content */
     margin-bottom: 3rem;
 }
 
@@ -837,7 +838,7 @@ img {
     font-size: 1.2rem;
     font-weight: 500;
     cursor: pointer;
-    color: var(--text-light);
+    color: var(--text-dark); /* Stronger text for tabs */
     position: relative;
     transition: var(--transition);
 }
@@ -1137,8 +1138,11 @@ footer {
         font-size: 3.2rem;
     }
     .hero-desc {
-        font-size: 1.1rem;
+        font-size: 1.15rem;
         padding-top: 1.5rem;
+        color: #333; /* Darker text for better visibility */
+        font-weight: 500;
+        line-height: 1.7;
     }
     .about-card {
         padding: 2.5rem;
@@ -1256,9 +1260,10 @@ footer {
     }
 
     #main-nav a {
-        font-size: 1.4rem;
-        color: var(--text-dark);
+        font-size: 1.5rem;
+        color: var(--primary-color); /* Use burgundy for better visibility in menu */
         font-weight: 700;
+        letter-spacing: 1px;
     }
 
     #nav-menu .lang-selector {
@@ -1273,10 +1278,12 @@ footer {
         width: 180px;
         justify-content: center;
         background: var(--white);
-        border: 2px solid var(--accent-gold);
+        border: 2px solid var(--primary-color); /* Changed to burgundy for better visibility */
+        color: var(--primary-color);
         font-size: 1.1rem;
-        font-weight: 600;
+        font-weight: 700;
         padding: 1rem;
+        border-radius: 50px;
     }
 
     .pub-card {
