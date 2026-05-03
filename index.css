@@ -1081,6 +1081,11 @@ footer {
     .section {
         padding: 80px 0;
     }
+    #hero {
+        height: auto;
+        min-height: unset;
+        padding: 120px 0 80px;
+    }
     .hero-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1095,6 +1100,7 @@ footer {
         border-left: none;
         border-top: 2px solid var(--accent-gold-light);
         padding: 2rem 0 0;
+        max-width: 100%;
     }
     .hero-actions {
         justify-content: center;
@@ -1141,9 +1147,9 @@ footer {
     .hero-desc {
         font-size: 1.15rem;
         padding-top: 1.5rem;
-        color: #333; /* Darker text for better visibility */
-        font-weight: 500;
-        line-height: 1.7;
+        color: var(--text-dark); /* Using variable for consistency */
+        font-weight: 600; /* Slightly bolder for mobile visibility */
+        line-height: 1.8;
     }
     .about-card {
         padding: 2.5rem;
