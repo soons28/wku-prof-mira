@@ -65,8 +65,10 @@ const translations = {
         section_news_title: "최신 학술 소식",
         news_loading: "연구원 소식을 불러오는 중입니다...",
         news_more: "연구원 게시판 바로가기",
-        global_reach_label: "글로벌 학술 영향력:",
-        global_reach_sub: "개국 방문"
+        global_reach_label: "글로벌 교류:",
+        global_reach_sub: "개국 협력",
+        visitor_count_label: "학술 방문:",
+        visitor_count_sub: "총 방문 횟수"
     },
     en: {
         site_title: "Professor Mira Kim - Wonkwang University",
@@ -134,8 +136,10 @@ const translations = {
         section_news_title: "Latest Academic News",
         news_loading: "Loading latest news...",
         news_more: "Go to KCRI Bulletin Board",
-        global_reach_label: "Global Academic Reach:",
-        global_reach_sub: "Visits from Countries"
+        global_reach_label: "Global Reach:",
+        global_reach_sub: "Countries & Regions",
+        visitor_count_label: "Academic Visits:",
+        visitor_count_sub: "Total Views"
     },
     zh: {
         site_title: "金美羅 教授 - 圆光大学 韩中关系研究院",

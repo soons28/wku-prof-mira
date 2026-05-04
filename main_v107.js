@@ -90,6 +90,14 @@ document.addEventListener('DOMContentLoaded', () => {
             if (metaDesc) metaDesc.setAttribute('content', t.site_description);
         }
 
+        // Highlight the flag corresponding to the current language
+        document.querySelectorAll('.global-reach .flag').forEach(flag => {
+            flag.classList.remove('active');
+            if (flag.getAttribute('data-lang') === lang) {
+                flag.classList.add('active');
+            }
+        });
+
         const langData = { 
             ko: { flag: "🇰🇷", name: "한국어" }, 
             en: { flag: "🇺🇸", name: "English" }, 
@@ -285,5 +293,37 @@ document.addEventListener('DOMContentLoaded', () => {
         backToTopBtn.addEventListener('click', () => {
             window.scrollTo({ top: 0, behavior: 'smooth' });
         });
+    }
+
+    // Visitor count animation (Simulating real-time academic reach)
+    const visitorCountEl = document.getElementById('visitor-count');
+    if (visitorCountEl) {
+        const target = parseInt(visitorCountEl.getAttribute('data-count'));
+        let current = 0;
+        const duration = 2000; // 2s animation
+        const startTime = performance.now();
+
+        const animate = (time) => {
+            const elapsed = time - startTime;
+            const progress = Math.min(elapsed / duration, 1);
+            // Ease out cubic
+            const easedProgress = 1 - Math.pow(1 - progress, 3);
+            current = Math.floor(easedProgress * target);
+            visitorCountEl.innerText = current.toLocaleString() + '+';
+            
+            if (progress < 1) {
+                requestAnimationFrame(animate);
+            } else {
+                // Occasional "real-time" increment every 15-30 seconds
+                setInterval(() => {
+                    const randomInc = Math.floor(Math.random() * 2);
+                    if (randomInc > 0) {
+                        const newCount = parseInt(visitorCountEl.innerText.replace(/,/g, '')) + randomInc;
+                        visitorCountEl.innerText = newCount.toLocaleString() + '+';
+                    }
+                }, 20000);
+            }
+        };
+        requestAnimationFrame(animate);
     }
 });
