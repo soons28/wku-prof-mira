@@ -1489,3 +1489,113 @@ footer {
     from { opacity: 0; transform: translateY(-10px); }
     to { opacity: 1; transform: translateY(0); }
 }
+
+/* Footer & Global Reach Styling */
+footer {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 5rem 0 3rem;
+    position: relative;
+    overflow: hidden;
+}
+
+footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, var(--accent-gold-light), var(--accent-gold), var(--accent-gold-light));
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    text-align: center;
+}
+
+.footer-logo-img {
+    height: 50px;
+    filter: brightness(0) invert(1);
+    opacity: 0.9;
+}
+
+.global-reach {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem 4rem;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 600px;
+    width: 100%;
+}
+
+.reach-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.reach-label {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.reach-count {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+}
+
+.reach-sub {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--white);
+}
+
+.reach-countries {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.reach-countries .flag {
+    transition: var(--transition);
+    cursor: default;
+    opacity: 0.8;
+}
+
+.reach-countries .flag:hover {
+    opacity: 1;
+    transform: scale(1.2);
+}
+
+.copyright {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 300;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 768px) {
+    .global-reach {
+        padding: 2rem 1.5rem;
+    }
+    .reach-count {
+        font-size: 2rem;
+    }
+}
+

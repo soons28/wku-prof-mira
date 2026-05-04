@@ -60,12 +60,13 @@ const translations = {
         form_placeholder_message: "메시지 내용을 입력하세요",
         form_submit: "보내기",
         footer_copyright: "© 2026 김미라 교수. All rights reserved.",
-        back_to_top_title: "위로 이동",
+        back_to_top_title: "맨 위로 이동",
         section_news_badge: "ACTIVITIES",
         section_news_title: "최신 학술 소식",
         news_loading: "연구원 소식을 불러오는 중입니다...",
         news_more: "연구원 게시판 바로가기",
-        nav_mobile_toggle: "메뉴 토글"
+        global_reach_label: "글로벌 학술 영향력:",
+        global_reach_sub: "개국 방문"
     },
     en: {
         site_title: "Professor Mira Kim - Wonkwang University",
@@ -133,7 +134,8 @@ const translations = {
         section_news_title: "Latest Academic News",
         news_loading: "Loading latest news...",
         news_more: "Go to KCRI Bulletin Board",
-        nav_mobile_toggle: "Toggle Menu"
+        global_reach_label: "Global Academic Reach:",
+        global_reach_sub: "Visits from Countries"
     },
     zh: {
         site_title: "金美羅 教授 - 圆光大学 韩中关系研究院",
@@ -201,7 +203,8 @@ const translations = {
         section_news_title: "最新学术动态",
         news_loading: "正在加载最新动态...",
         news_more: "前往研究院公告栏",
-        nav_mobile_toggle: "切换菜单"
+        global_reach_label: "全球学术影响力:",
+        global_reach_sub: "个国家访问"
     },
     zh_hant: {
         site_title: "金美羅 教授 - 圓光大學 韓中關係研究院",
@@ -337,7 +340,9 @@ const translations = {
         section_news_title: "最新の学術ニュース",
         news_loading: "ニュースを読み込んでいます...",
         news_more: "研究院掲示板へ",
-        nav_mobile_toggle: "メニュー切替"
+        nav_mobile_toggle: "メニュー切替",
+        global_reach_label: "グローバル学術影響力:",
+        global_reach_sub: "カ国からの訪問"
     },
     de: {
         site_title: "Professor Mira Kim - Wonkwang Universität",
@@ -405,7 +410,9 @@ const translations = {
         section_news_title: "Aktuelle akademische Nachrichten",
         news_loading: "Nachrichten werden geladen...",
         news_more: "Zum KCRI-Schwarzen Brett",
-        nav_mobile_toggle: "Menü umschalten"
+        nav_mobile_toggle: "Menü umschalten",
+        global_reach_label: "Globale akademische Reichweite:",
+        global_reach_sub: "Besuche aus Ländern"
     },
     es: {
         site_title: "Profesora Mira Kim - Universidad Wonkwang",
