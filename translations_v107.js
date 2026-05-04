@@ -61,6 +61,10 @@ const translations = {
         form_submit: "보내기",
         footer_copyright: "© 2026 김미라 교수. All rights reserved.",
         back_to_top_title: "위로 이동",
+        section_news_badge: "ACTIVITIES",
+        section_news_title: "최신 학술 소식",
+        news_loading: "연구원 소식을 불러오는 중입니다...",
+        news_more: "연구원 게시판 바로가기",
         nav_mobile_toggle: "메뉴 토글"
     },
     en: {
@@ -125,6 +129,10 @@ const translations = {
         form_submit: "Send",
         footer_copyright: "© 2026 Professor Mira Kim. All rights reserved.",
         back_to_top_title: "Back to Top",
+        section_news_badge: "ACTIVITIES",
+        section_news_title: "Latest Academic News",
+        news_loading: "Loading latest news...",
+        news_more: "Go to KCRI Bulletin Board",
         nav_mobile_toggle: "Toggle Menu"
     },
     zh: {
@@ -187,8 +195,12 @@ const translations = {
         form_placeholder_email: "电子邮箱",
         form_placeholder_message: "请输入咨询内容",
         form_submit: "发送",
-        footer_copyright: "© 2026 金美羅 教授. 版权所有。",
+        footer_copyright: "© 2026 金美罗 教授. 版权所有.",
         back_to_top_title: "回到顶部",
+        section_news_badge: "活动",
+        section_news_title: "最新学术动态",
+        news_loading: "正在加载最新动态...",
+        news_more: "前往研究院公告栏",
         nav_mobile_toggle: "切换菜单"
     },
     zh_hant: {
@@ -251,8 +263,12 @@ const translations = {
         form_placeholder_email: "電子郵件",
         form_placeholder_message: "請輸入諮詢內容",
         form_submit: "發送",
-        footer_copyright: "© 2026 金美羅 教授. 版權所有。",
+        footer_copyright: "© 2026 金美羅 教授. 版權所有.",
         back_to_top_title: "回到頂部",
+        section_news_badge: "活動",
+        section_news_title: "最新學術動態",
+        news_loading: "正在加載最新動態...",
+        news_more: "前往研究院公告欄",
         nav_mobile_toggle: "切換菜單"
     },
     ja: {
@@ -317,6 +333,10 @@ const translations = {
         form_submit: "送信",
         footer_copyright: "© 2026 金美羅 教授. All rights reserved.",
         back_to_top_title: "トップへ戻る",
+        section_news_badge: "活動",
+        section_news_title: "最新の学術ニュース",
+        news_loading: "ニュースを読み込んでいます...",
+        news_more: "研究院掲示板へ",
         nav_mobile_toggle: "メニュー切替"
     },
     de: {
@@ -379,8 +399,12 @@ const translations = {
         form_placeholder_email: "E-Mail",
         form_placeholder_message: "Ihre Nachricht",
         form_submit: "Senden",
-        footer_copyright: "© 2026 Professor Mira Kim. Alle Rechte vorbehalten.",
+        footer_copyright: "© 2026 Prof. Mira Kim. Alle Rechte vorbehalten.",
         back_to_top_title: "Nach oben",
+        section_news_badge: "AKTIVITÄTEN",
+        section_news_title: "Aktuelle akademische Nachrichten",
+        news_loading: "Nachrichten werden geladen...",
+        news_more: "Zum KCRI-Schwarzen Brett",
         nav_mobile_toggle: "Menü umschalten"
     },
     es: {
@@ -443,9 +467,13 @@ const translations = {
         form_placeholder_email: "Correo",
         form_placeholder_message: "Ingrese su mensaje",
         form_submit: "Enviar",
-        footer_copyright: "© 2026 Profesora Mira Kim. Todos los derechos reservados.",
+        footer_copyright: "© 2026 Profa. Mira Kim. Todos los derechos reservados.",
         back_to_top_title: "Volver arriba",
-        nav_mobile_toggle: "Alternar menú"
+        section_news_badge: "ACTIVIDADES",
+        section_news_title: "Últimas noticias académicas",
+        news_loading: "Cargando noticias...",
+        news_more: "Ir al tablón de anuncios de KCRI",
+        nav_mobile_toggle: "Cambiar menú"
     },
     vi: {
         site_title: "Giáo sư Mira Kim - Đại học Wonkwang",
@@ -507,9 +535,13 @@ const translations = {
         form_placeholder_email: "Email",
         form_placeholder_message: "Nhập tin nhắn của bạn",
         form_submit: "Gửi",
-        footer_copyright: "© 2026 Giáo sư Mira Kim. Bảo lưu mọi quyền.",
-        back_to_top_title: "Lên đầu trang",
-        nav_mobile_toggle: "Bật/Tắt menu"
+        footer_copyright: "© 2026 GS. Mira Kim. Bảo lưu mọi quyền.",
+        back_to_top_title: "Về đầu trang",
+        section_news_badge: "HOẠT ĐỘNG",
+        section_news_title: "Tin tức học thuật mới nhất",
+        news_loading: "Đang tải tin tức...",
+        news_more: "Đi đến bảng tin KCRI",
+        nav_mobile_toggle: "Chuyển menu"
     },
     id: {
         site_title: "Profesor Mira Kim - Universitas Wonkwang",
@@ -957,6 +989,10 @@ const translations = {
         form_submit: "Жіберу",
         footer_copyright: "© 2026 Профессор Мира Ким. Барлық құқықтар қорғалған.",
         back_to_top_title: "Жоғарыға",
+        section_news_badge: "ІС-ӘРЕКЕТТЕР",
+        section_news_title: "Соңғы академиялық жаңалықтар",
+        news_loading: "Жаңалықтар жүктелуде...",
+        news_more: "KCRI хабарландыру тақтасына өту",
         nav_mobile_toggle: "Мәзір"
     },
     bn: {
