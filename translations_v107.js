@@ -68,7 +68,15 @@ const translations = {
         global_reach_label: "글로벌 교류:",
         global_reach_sub: "개국 협력",
         visitor_count_label: "학술 방문:",
-        visitor_count_sub: "총 방문 횟수"
+        visitor_count_sub: "총 방문 횟수",
+        pub_count_label: "학술 성과:",
+        pub_count_sub: "저서 및 논문",
+        project_count_label: "연구 과제:",
+        project_count_sub: "진행 및 완료",
+        cite_count_label: "인용 지수:",
+        cite_count_sub: "누적 인용 횟수",
+        talk_count_label: "학술 강연:",
+        talk_count_sub: "국내외 기조 강연"
     },
     en: {
         site_title: "Professor Mira Kim - Wonkwang University",
@@ -139,7 +147,15 @@ const translations = {
         global_reach_label: "Global Reach:",
         global_reach_sub: "Countries & Regions",
         visitor_count_label: "Academic Visits:",
-        visitor_count_sub: "Total Views"
+        visitor_count_sub: "Total Views",
+        pub_count_label: "Academic Output:",
+        pub_count_sub: "Books & Papers",
+        project_count_label: "Research Projects:",
+        project_count_sub: "Active Projects",
+        cite_count_label: "Citations:",
+        cite_count_sub: "Google Scholar",
+        talk_count_label: "Invited Talks:",
+        talk_count_sub: "International Keynote"
     },
     zh: {
         site_title: "金美羅 教授 - 圆光大学 韩中关系研究院",
@@ -208,7 +224,15 @@ const translations = {
         news_loading: "正在加载最新动态...",
         news_more: "前往研究院公告栏",
         global_reach_label: "全球学术影响力:",
-        global_reach_sub: "个国家访问"
+        global_reach_sub: "个国家访问",
+        pub_count_label: "学术成果:",
+        pub_count_sub: "著作与论文",
+        project_count_label: "研究项目:",
+        project_count_sub: "进行中与完成",
+        cite_count_label: "引用指数:",
+        cite_count_sub: "累计引用次数",
+        talk_count_label: "学术演讲:",
+        talk_count_sub: "国内外主旨演讲"
     },
     zh_hant: {
         site_title: "金美羅 教授 - 圓光大學 韓中關係研究院",
@@ -276,6 +300,16 @@ const translations = {
         section_news_title: "最新學術動態",
         news_loading: "正在加載最新動態...",
         news_more: "前往研究院公告欄",
+        global_reach_label: "全球學術影響力:",
+        global_reach_sub: "個國家訪問",
+        pub_count_label: "學術成果:",
+        pub_count_sub: "著作與論文",
+        project_count_label: "研究項目:",
+        project_count_sub: "進行中與完成",
+        cite_count_label: "引用指數:",
+        cite_count_sub: "累計引用次數",
+        talk_count_label: "學術演講:",
+        talk_count_sub: "國內外主旨演講",
         nav_mobile_toggle: "切換菜單"
     },
     ja: {
@@ -345,8 +379,16 @@ const translations = {
         news_loading: "ニュースを読み込んでいます...",
         news_more: "研究院掲示板へ",
         nav_mobile_toggle: "メニュー切替",
-        global_reach_label: "グローバル学術影響力:",
-        global_reach_sub: "カ国からの訪問"
+        global_reach_label: "グローバル影響力:",
+        global_reach_sub: "カ国からの訪問",
+        pub_count_label: "研究成果:",
+        pub_count_sub: "著書・論文",
+        project_count_label: "研究プロジェクト:",
+        project_count_sub: "進行中・完了",
+        cite_count_label: "引用指数:",
+        cite_count_sub: "累計引用数",
+        talk_count_label: "学術講演:",
+        talk_count_sub: "国内外基調講演"
     },
     de: {
         site_title: "Professor Mira Kim - Wonkwang Universität",
