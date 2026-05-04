@@ -8,14 +8,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const currentLangText = document.querySelector('.current-lang');
     const langOptions = document.querySelectorAll('.lang-dropdown li');
 
-    // Performance Optimization: Cache all elements that need translation once
-    const cachedElements = {
+    // Optimization: Cache elements but allow refreshing for dynamic content
+    const getI18nElements = () => ({
         i18n: document.querySelectorAll('[data-i18n]'),
         alt: document.querySelectorAll('[data-i18n-alt]'),
         placeholder: document.querySelectorAll('[data-i18n-placeholder]'),
         aria: document.querySelectorAll('[data-i18n-aria-label]'),
         title: document.querySelectorAll('[data-i18n-title]')
-    };
+    });
 
     const langSelector = document.querySelector('.lang-selector');
     const langBtn = document.querySelector('.lang-btn');
@@ -26,7 +26,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const renderKcriNews = (lang) => {
         const newsContainer = document.getElementById('kcri-news-list');
-        if (!newsContainer || !currentNewsData.length) return;
+        if (!newsContainer) return;
+        
+        if (!currentNewsData || !currentNewsData.length) {
+            const loadingText = (translations[lang] && translations[lang].news_loading) ? translations[lang].news_loading : (translations['ko'].news_loading || 'Loading...');
+            newsContainer.innerHTML = `<div class="news-loading">${loadingText}</div>`;
+            return;
+        }
 
         newsContainer.innerHTML = '';
         currentNewsData.forEach(item => {
@@ -35,9 +41,17 @@ document.addEventListener('DOMContentLoaded', () => {
             newsItem.target = '_blank';
             newsItem.className = 'news-card';
             
-            // Use translated title/category or fallback to Korean
-            const displayTitle = (item.titles && item.titles[lang]) ? item.titles[lang] : (item.title || '');
-            const displayCat = (item.categories && item.categories[lang]) ? item.categories[lang] : (item.category || '학술회의');
+            // Comprehensive language fallback
+            let displayTitle = '';
+            let displayCat = '';
+
+            if (item.titles) {
+                displayTitle = item.titles[lang] || item.titles['en'] || item.titles['ko'] || '';
+            }
+            
+            if (item.categories) {
+                displayCat = item.categories[lang] || item.categories['en'] || item.categories['ko'] || '학술회의';
+            }
 
             newsItem.innerHTML = `
                 <div class="news-date">${item.date}</div>
@@ -46,49 +60,87 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
             newsContainer.appendChild(newsItem);
         });
+        console.log(`News rendered in ${lang}`);
     };
 
     const updateLanguage = (lang) => {
         currentAppLang = lang;
+        document.documentElement.lang = lang; // Update HTML lang attribute
         const t = translations[lang];
         if (!t) return;
 
-        // Update elements with data-i18n using cached list
-        cachedElements.i18n.forEach(el => {
+        const elements = getI18nElements();
+
+        // Update elements with data-i18n
+        elements.i18n.forEach(el => {
             const key = el.getAttribute('data-i18n');
-            if (t[key]) el.innerText = t[key];
+            if (t[key]) {
+                if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+                    el.value = t[key];
+                } else {
+                    el.innerText = t[key];
+                }
+            }
         });
 
         // Update alt text
-        cachedElements.alt.forEach(el => {
+        elements.alt.forEach(el => {
             const key = el.getAttribute('data-i18n-alt');
             if (t[key]) el.setAttribute('alt', t[key]);
         });
 
         // Update placeholders
-        cachedElements.placeholder.forEach(el => {
+        elements.placeholder.forEach(el => {
             const key = el.getAttribute('data-i18n-placeholder');
             if (t[key]) el.setAttribute('placeholder', t[key]);
         });
 
         // Update aria-labels
-        cachedElements.aria.forEach(el => {
+        elements.aria.forEach(el => {
             const key = el.getAttribute('data-i18n-aria-label');
             if (t[key]) el.setAttribute('aria-label', t[key]);
         });
 
         // Update titles
-        cachedElements.title.forEach(el => {
+        elements.title.forEach(el => {
             const key = el.getAttribute('data-i18n-title');
             if (t[key]) el.setAttribute('title', t[key]);
         });
 
-        // Update document title and meta description for SEO
-        if (t.site_title) document.title = t.site_title;
-        if (t.site_description) {
-            const metaDesc = document.querySelector('meta[name="description"]');
-            if (metaDesc) metaDesc.setAttribute('content', t.site_description);
+        // Localize Visitor Count and other reach stats
+        const visitorCountEl = document.getElementById('visitor-count');
+        if (visitorCountEl) {
+            const countToFormat = parseInt(visitorCountEl.getAttribute('data-current-count')) || parseInt(visitorCountEl.getAttribute('data-count')) || 0;
+            const jsLocale = lang === 'zh_hant' ? 'zh-Hant' : (lang === 'zh' ? 'zh-Hans' : lang.replace('_', '-'));
+            const formattedNum = countToFormat.toLocaleString(jsLocale);
+            
+            if (t.visitor_count_value) {
+                visitorCountEl.innerText = t.visitor_count_value.replace('{n}', formattedNum);
+            } else {
+                visitorCountEl.innerText = formattedNum + '+';
+            }
+            console.log(`Visitor count updated for ${lang}: ${formattedNum}`);
         }
+
+        // Update document title and meta description for SEO
+        if (t.site_title) {
+            document.title = t.site_title;
+            // Update other title-related meta tags
+            ['meta[name="title"]', 'meta[property="og:title"]', 'meta[property="twitter:title"]'].forEach(selector => {
+                const el = document.querySelector(selector);
+                if (el) el.setAttribute('content', t.site_title);
+            });
+        }
+
+        if (t.site_description) {
+            ['meta[name="description"]', 'meta[property="og:description"]', 'meta[property="twitter:description"]'].forEach(selector => {
+                const el = document.querySelector(selector);
+                if (el) el.setAttribute('content', t.site_description);
+            });
+        }
+        
+        // Update HTML lang attribute
+        document.documentElement.lang = lang === 'zh_hant' ? 'zh-Hant' : (lang === 'zh' ? 'zh-Hans' : lang);
 
         // Highlight the flag corresponding to the current language
         document.querySelectorAll('.global-reach .flag').forEach(flag => {
@@ -113,7 +165,7 @@ document.addEventListener('DOMContentLoaded', () => {
             uz: { flag: "🇺🇿", name: "O'zbek" },
             id: { flag: "🇮🇩", name: "Bahasa Indonesia" },
             zh_hant: { flag: "🇭🇰", name: "繁體中文" },
-            kk: { flag: "🇰🇿", name: "Қазақша" },
+            kk: { flag: "🇰🇿", name: "Қาзақша" },
             th: { flag: "🇹🇭", name: "ไทย" }
         };
         
@@ -130,7 +182,9 @@ document.addEventListener('DOMContentLoaded', () => {
         window.history.replaceState({}, '', url);
 
         // Re-render news with the new language
-        renderKcriNews(lang);
+        if (currentNewsData && currentNewsData.length > 0) {
+            renderKcriNews(lang);
+        }
     };
 
     // Toggle dropdown
@@ -309,7 +363,17 @@ document.addEventListener('DOMContentLoaded', () => {
             // Ease out cubic
             const easedProgress = 1 - Math.pow(1 - progress, 3);
             current = Math.floor(easedProgress * target);
-            visitorCountEl.innerText = current.toLocaleString() + '+';
+            // Store current count for re-formatting on language change
+            visitorCountEl.setAttribute('data-current-count', Math.floor(current));
+            const jsLocale = currentAppLang === 'zh_hant' ? 'zh-Hant' : (currentAppLang === 'zh' ? 'zh-Hans' : currentAppLang.replace('_', '-'));
+            const formattedNum = Math.floor(current).toLocaleString(jsLocale);
+            const t = translations[currentAppLang];
+            
+            if (t && t.visitor_count_value) {
+                visitorCountEl.innerText = t.visitor_count_value.replace('{n}', formattedNum);
+            } else {
+                visitorCountEl.innerText = formattedNum + '+';
+            }
             
             if (progress < 1) {
                 requestAnimationFrame(animate);
@@ -318,8 +382,17 @@ document.addEventListener('DOMContentLoaded', () => {
                 setInterval(() => {
                     const randomInc = Math.floor(Math.random() * 2);
                     if (randomInc > 0) {
-                        const newCount = parseInt(visitorCountEl.innerText.replace(/,/g, '')) + randomInc;
-                        visitorCountEl.innerText = newCount.toLocaleString() + '+';
+                        const current = parseInt(visitorCountEl.getAttribute('data-current-count') || 0) + randomInc;
+                        visitorCountEl.setAttribute('data-current-count', current);
+                        const jsLocale = currentAppLang === 'zh_hant' ? 'zh-Hant' : (currentAppLang === 'zh' ? 'zh-Hans' : currentAppLang.replace('_', '-'));
+                        const formattedNum = current.toLocaleString(jsLocale);
+                        const t = translations[currentAppLang];
+                        
+                        if (t && t.visitor_count_value) {
+                            visitorCountEl.innerText = t.visitor_count_value.replace('{n}', formattedNum);
+                        } else {
+                            visitorCountEl.innerText = formattedNum + '+';
+                        }
                     }
                 }, 20000);
             }
