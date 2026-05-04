@@ -1,0 +1,35 @@
+name: Update Academic News
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Every day at midnight UTC
+  workflow_dispatch: # Allow manual trigger
+  push:
+    paths:
+      - 'update_news.js'
+    branches:
+      - main
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Run update script
+        run: node update_news.js
+
+      - name: Commit and push if changed
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add news.json
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update academic news [skip ci]" && git push)

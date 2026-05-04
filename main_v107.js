@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Check if global translations are loaded from translations_fixed.js
     if (typeof translations === 'undefined') {
-        console.error('Translations not loaded! Please check translations_fixed.js');
+        console.error('Translations not loaded! Please check translations_v107.js');
         return;
     }
 
