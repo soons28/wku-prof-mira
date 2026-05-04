@@ -1519,8 +1519,15 @@ footer::before {
 
 .footer-logo-img {
     height: 50px;
-    filter: brightness(0) invert(1);
-    opacity: 0.9;
+    /* Sophisticated Gold Filter for Burgundy background */
+    filter: brightness(0) saturate(100%) invert(86%) sepia(21%) saturate(542%) hue-rotate(351deg) brightness(104%) contrast(105%);
+    opacity: 1;
+    transition: var(--transition);
+}
+
+.footer-logo-img:hover {
+    filter: brightness(1.1) saturate(110%);
+    transform: scale(1.05);
 }
 
 .global-reach {
