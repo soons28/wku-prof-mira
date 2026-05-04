@@ -1544,7 +1544,7 @@ footer::before {
     display: flex;
     flex-direction: column;
     gap: 0.6rem;
-    max-width: 650px;
+    max-width: 950px;
 }
 
 .reach-info {
