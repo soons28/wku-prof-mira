@@ -130,6 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Initial Lang Detection
     const getBrowserLang = () => {
+        const ua = navigator.userAgent.toLowerCase();
+        const isBot = /bot|spider|crawl|slurp|google|naver|bing|yandex|facebook|twitter/i.test(ua);
+        
+        // Always default to Korean for bots to maintain high ranking in Korean search engines
+        if (isBot) return 'ko';
+
         const navLang = navigator.language || 'ko';
         const short = navLang.split('-')[0].toLowerCase();
         const map = { 'ko': 'ko', 'en': 'en', 'zh': (navLang.toLowerCase().match(/tw|hk/) ? 'zh_hant' : 'zh'), 'ja': 'ja', 'de': 'de', 'es': 'es', 'vi': 'vi', 'id': 'id', 'th': 'th', 'mn': 'mn', 'ne': 'ne', 'uz': 'uz', 'az': 'az', 'kk': 'kk', 'bn': 'bn' };
