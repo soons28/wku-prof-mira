@@ -1,5 +1,45 @@
 [
   {
+    "date": "2026.06.18",
+    "link": "https://kcri.wku.ac.kr/?p=7774",
+    "titles": {
+      "ko": "원광대학교 한중관계연구원 ‘대전환 시대의 한중협력’ 공동학술회의 성료",
+      "en": "Wonkwang University Korea-China Relations Research Institute successfully completed joint academic conference ‘Korea-China Cooperation in the Era of Great Transformation’",
+      "zh": "圆光大学韩中关系研究院“大转型时代的韩中合作”联合学术会议圆满结束",
+      "zh_hant": "圓光大學韓中關係研究院「大轉型時代的韓中合作」聯合學術會議圓滿結束",
+      "ja": "ウォンクァン大学韓中関係研究院「大転換時代の韓中協力」共同学術会議成績",
+      "de": "Das Korea-China Relations Research Institute der Wonkwang University hat die gemeinsame akademische Konferenz „Korea-China Cooperation in the Era of Great Transformation“ erfolgreich abgeschlossen.",
+      "es": "El Instituto de Investigación de Relaciones Corea-China de la Universidad Wonkwang completó con éxito la conferencia académica conjunta \"Cooperación Corea-China en la era de la gran transformación\"",
+      "ne": "वोंक्वाङ विश्वविद्यालय कोरिया-चीन सम्बन्ध अनुसन्धान संस्थानले संयुक्त शैक्षिक सम्मेलन ‘महान परिवर्तनको युगमा कोरिया-चीन सहयोग’ सफलतापूर्वक सम्पन्न गरेको छ।",
+      "mn": "Вонквангийн их сургуулийн Солонгос-Хятадын харилцааны судалгааны хүрээлэн \"Их өөрчлөлтийн эрин үеийн Солонгос-Хятадын хамтын ажиллагаа\" сэдэвт эрдэм шинжилгээний хурал амжилттай болж өндөрлөлөө.",
+      "vi": "Viện nghiên cứu quan hệ Hàn-Trung của Đại học Wonkwang đã tổ chức thành công hội nghị học thuật chung ‘Hợp tác Hàn-Trung trong kỷ nguyên chuyển đổi lớn’",
+      "bn": "ওঙ্কওয়াং ইউনিভার্সিটি কোরিয়া-চীন রিলেশনস রিসার্চ ইনস্টিটিউট সফলভাবে যৌথ একাডেমিক কনফারেন্স 'গ্রেট ট্রান্সফরমেশনের যুগে কোরিয়া-চীন সহযোগিতা' সম্পন্ন করেছে",
+      "az": "Vonkvanq Universitetinin Koreya-Çin Münasibətləri Tədqiqat İnstitutu “Böyük transformasiya dövründə Koreya-Çin əməkdaşlığı” adlı birgə akademik konfransı uğurla başa vurdu.",
+      "uz": "Vonkvang universiteti Koreya-Xitoy munosabatlari tadqiqot instituti “Buyuk o‘zgarishlar davrida Koreya-Xitoy hamkorligi” qo‘shma ilmiy konferensiyasini muvaffaqiyatli yakunladi.",
+      "id": "Institut Penelitian Hubungan Korea-Tiongkok Universitas Wonkwang berhasil menyelesaikan konferensi akademik bersama 'Kerjasama Korea-Tiongkok di Era Transformasi Besar'",
+      "kk": "Вонкван университетінің Корея-Қытай қатынастарын зерттеу институты «Ұлы трансформация дәуіріндегі Корея-Қытай ынтымақтастығы» атты бірлескен академиялық конференцияны сәтті аяқтады.",
+      "th": "สถาบันวิจัยความสัมพันธ์เกาหลี-จีน มหาวิทยาลัยวอนกวาง ประสบความสำเร็จในการประชุมวิชาการร่วม 'ความร่วมมือเกาหลี-จีนในยุคแห่งการเปลี่ยนแปลงครั้งใหญ่'"
+    },
+    "categories": {
+      "ko": "국내학술회의",
+      "en": "Domestic academic conference",
+      "zh": "国内学术会议",
+      "zh_hant": "國內學術會議",
+      "ja": "国内学術会議",
+      "de": "Inländische akademische Konferenz",
+      "es": "conferencia académica nacional",
+      "ne": "घरेलु शैक्षिक सम्मेलन",
+      "mn": "Дотоодын эрдэм шинжилгээний хурал",
+      "vi": "Hội thảo khoa học trong nước",
+      "bn": "গার্হস্থ্য একাডেমিক সম্মেলন",
+      "az": "Yerli akademik konfrans",
+      "uz": "Mahalliy ilmiy konferentsiya",
+      "id": "Konferensi akademik dalam negeri",
+      "kk": "Отандық академиялық конференция",
+      "th": "การประชุมวิชาการในประเทศ"
+    }
+  },
+  {
     "date": "2025.11.17",
     "link": "https://kcri.wku.ac.kr/?p=7612",
     "titles": {
@@ -99,46 +139,6 @@
       "id": "Institut Hubungan Korea-Tiongkok mengadakan konferensi akademik bersama dengan Institut Konfusius",
       "kk": "Корея-Қытай қатынастары институты Конфуций институтымен бірлескен академиялық конференция өткізеді",
       "th": "สถาบันความสัมพันธ์เกาหลี-จีนจัดการประชุมวิชาการร่วมกับสถาบันขงจื๊อ"
-    },
-    "categories": {
-      "ko": "국내학술회의",
-      "en": "Domestic academic conference",
-      "zh": "国内学术会议",
-      "zh_hant": "國內學術會議",
-      "ja": "国内学術会議",
-      "de": "Inländische akademische Konferenz",
-      "es": "conferencia académica nacional",
-      "ne": "घरेलु शैक्षिक सम्मेलन",
-      "mn": "Дотоодын эрдэм шинжилгээний хурал",
-      "vi": "Hội thảo khoa học trong nước",
-      "bn": "গার্হস্থ্য একাডেমিক সম্মেলন",
-      "az": "Yerli akademik konfrans",
-      "uz": "Mahalliy ilmiy konferentsiya",
-      "id": "Konferensi akademik dalam negeri",
-      "kk": "Отандық академиялық конференция",
-      "th": "การประชุมวิชาการในประเทศ"
-    }
-  },
-  {
-    "date": "2025.06.12",
-    "link": "https://kcri.wku.ac.kr/?p=7495",
-    "titles": {
-      "ko": "한중관계연구원 & 주광주 중화인민공화국 총영사관 공동학술회의",
-      "en": "Joint academic conference between Korea-China Relations Institute & Consulate General of the People's Republic of China in Guangzhou",
-      "zh": "韩中关系研究院与中华人民共和国驻广州总领事馆联合学术会议",
-      "zh_hant": "韓中關係研究院與中華人民共和國駐廣州總領事館聯合學術會議",
-      "ja": "韓中関係研究院＆周光州中華人民共和国総領事館共同学術会議",
-      "de": "Gemeinsame akademische Konferenz zwischen dem Korea-China Relations Institute und dem Generalkonsulat der Volksrepublik China in Guangzhou",
-      "es": "Conferencia académica conjunta entre el Instituto de Relaciones Corea-China y el Consulado General de la República Popular China en Guangzhou",
-      "ne": "कोरिया-चीन सम्बन्ध संस्थान र जनवादी गणतन्त्र चीनको महावाणिज्य दूतावास बीचको संयुक्त शैक्षिक सम्मेलन ग्वाङ्झाउमा",
-      "mn": "Солонгос-Хятадын харилцааны хүрээлэн, БНХАУ-ын Гуанжоу дахь Консулын газар хамтарсан эрдэм шинжилгээний хурал боллоо.",
-      "vi": "Hội nghị học thuật chung giữa Viện Quan hệ Hàn-Trung và Tổng Lãnh sự quán Cộng hòa Nhân dân Trung Hoa tại Quảng Châu",
-      "bn": "কোরিয়া-চীন সম্পর্ক ইনস্টিটিউট এবং গুয়াংজুতে গণপ্রজাতন্ত্রী চীনের কনস্যুলেট জেনারেলের মধ্যে যৌথ একাডেমিক সম্মেলন",
-      "az": "Koreya-Çin Əlaqələri İnstitutu və Çin Xalq Respublikasının Quançjoudakı Baş Konsulluğu arasında birgə akademik konfrans",
-      "uz": "Koreya-Xitoy munosabatlari instituti va Xitoy Xalq Respublikasining Guanchjou shahridagi Bosh konsulligi o‘rtasida qo‘shma ilmiy konferensiya",
-      "id": "Konferensi akademik gabungan antara Institut Hubungan Korea-Tiongkok & Konsulat Jenderal Republik Rakyat Tiongkok di Guangzhou",
-      "kk": "Гуанчжоудағы Корея-Қытай қатынастары институты мен Қытай Халық Республикасының Бас консулдығы арасындағы бірлескен академиялық конференция",
-      "th": "การประชุมวิชาการร่วมระหว่างสถาบันความสัมพันธ์เกาหลี-จีน และสถานกงสุลใหญ่สาธารณรัฐประชาชนจีน ณ เมืองกว่างโจว"
     },
     "categories": {
       "ko": "국내학술회의",
