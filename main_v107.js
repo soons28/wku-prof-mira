@@ -161,14 +161,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Tabs
     const tabBtns = document.querySelectorAll('.tab-btn');
-    const bList = document.getElementById('books-list');
-    const pList = document.getElementById('papers-list');
+    const tabLists = {
+        books: document.getElementById('books-list'),
+        papers: document.getElementById('papers-list'),
+        media: document.getElementById('media-list')
+    };
     tabBtns.forEach(btn => btn.addEventListener('click', () => {
         tabBtns.forEach(b => b.classList.remove('active'));
         btn.classList.add('active');
-        const isBooks = btn.getAttribute('data-tab') === 'books';
-        bList.style.display = isBooks ? 'grid' : 'none';
-        pList.style.display = isBooks ? 'none' : 'grid';
+        const targetTab = btn.getAttribute('data-tab');
+        Object.keys(tabLists).forEach(key => {
+            if (tabLists[key]) {
+                tabLists[key].style.display = (key === targetTab) ? 'grid' : 'none';
+            }
+        });
     }));
 
     // Scroll reveal

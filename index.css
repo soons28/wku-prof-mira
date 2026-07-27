@@ -1040,6 +1040,32 @@ img {
     font-style: italic;
 }
 
+.pub-link-card {
+    text-decoration: none;
+    cursor: pointer;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pub-link-card .pub-press {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-style: normal;
+    margin-top: 0.4rem;
+}
+
+.pub-arrow {
+    color: var(--accent-gold);
+    transition: transform 0.3s ease, color 0.3s ease;
+    display: flex;
+    align-items: center;
+}
+
+.pub-link-card:hover .pub-arrow {
+    transform: translateX(5px);
+    color: var(--primary-color);
+}
+
 /* Contact Section */
 .contact-box {
     display: grid;
